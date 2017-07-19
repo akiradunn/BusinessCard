@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "德家7mall总部招商",
+    "navigationBarTextStyle":"#fff",
+    "backgroundColor":"#1296db"
+  }
+}

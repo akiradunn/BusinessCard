@@ -1,0 +1,51 @@
+<view class="container">
+
+  <view class="about-page">
+      <view class="tag-tag" >
+          <view class="section-1">
+              <view class="avatar">
+                  <image src="../../res/icon/avatar.jpg"></image>
+              </view>
+              <view class="detail">
+                <view class="name flex1">
+                    <text>刘君</text>
+                </view>
+                <view class="comp flex1">
+                    <image src="../../res/icon/profession.png"></image>  <text> {{userProfile.job}}</text>
+                    <text>德家7mall总部招商经理</text>
+                </view>
+                <view class="comp flex1">
+                    <image src="../../res/icon/mobile.png"></image>  <text> {{userProfile.mobile}}</text>
+                </view>
+                <view class="comp flex1">
+                    <image src="../../res/icon/email.png"></image>  <text> {{userProfile.email}}</text>
+                </view>
+                <view class="loca flex1">
+                    <image src="../../res/icon/local.png"></image><text> {{userProfile.location}}</text>
+                </view>
+                <view class="comp flex1">
+                </view>
+                <view class="comp flex1">
+                    <image src="../../res/icon/list0.png"></image>  <text> {{userProfile.introduction}}</text>
+                </view>
+              </view>
+          </view>
+      </view>
+
+      <view class="store-introduction">
+          <view class="store-introduction-title">
+              <text>微信&&店铺照片</text>
+          </view>
+          <view  class="store-introduction-photos">
+              <swiper indicator-dots="{{userProfile.indicatorDots}}" class="end"
+                      autoplay="{{userProfile.autoplay}}" interval="{{userProfile.interval}}" duration="{{duration}}">
+                      <block wx:for="{{userProfile.imgUrls}}">
+                             <swiper-item>
+                                     <image src="{{item}}" class="slide-image"/>
+                             </swiper-item>
+                      </block>
+              </swiper>
+           </view>
+       </view>
+    </view>
+</view>
